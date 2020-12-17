@@ -1,0 +1,51 @@
+       10000
+           1           8           2  -141.320953971078     
+  -94.0617909901192                0
+           2           1           3  0.368163667591328     
+  -96.4098196727661                0
+           3           2           7  -35.6557950035352     
+  -116.368266809813                0
+           4           3           4  -82.2387046096591     
+  -116.368266809813                0
+           5           7           8  -159.655712732152     
+  -116.380091358182                0
+           6           6           6  -151.667538726287     
+  -161.882704760891                0
+           7           3           5  -82.5314391742043     
+  -162.728449823414                0
+           8           4           1  -116.380091358182     
+  -165.659462336709                0
+ Acceptance rate for change of chains:
+   1000.00004020952       2.000000000000000E-003
+   600.000024125709       2.000000000000000E-003
+   400.000016083806       0.452000000000000     
+   350.000014073330       0.158000000000000     
+   300.000012062855       0.374000000000000     
+   275.000011057617       0.688000000000000     
+   262.000010534893       0.678000000000000     
+   250.000010052379       0.000000000000000E+000
+ 
+Temperature, Node,local acceptance rate:     0.50  1000.00   2       0.637
+Last Energy, Average Energy, Spec. Heat:        0.37       25.69       10.86
+ 
+Temperature, Node,local acceptance rate:     0.84   600.00   3       0.537
+Last Energy, Average Energy, Spec. Heat:      -35.66      -43.13       13.36
+ 
+Temperature, Node,local acceptance rate:     1.26   400.00   7       0.346
+Last Energy, Average Energy, Spec. Heat:      -82.53      -91.82       23.47
+ 
+Temperature, Node,local acceptance rate:     1.44   350.00   4       0.345
+Last Energy, Average Energy, Spec. Heat:      -82.24      -99.91       31.92
+ 
+Temperature, Node,local acceptance rate:     1.68   300.00   8       0.338
+Last Energy, Average Energy, Spec. Heat:     -116.38     -119.86       69.92
+ 
+Temperature, Node,local acceptance rate:     1.83   275.00   6       0.262
+Last Energy, Average Energy, Spec. Heat:     -151.67     -132.79       73.20
+ 
+Temperature, Node,local acceptance rate:     1.92   262.00   5       0.287
+Last Energy, Average Energy, Spec. Heat:     -159.66     -136.67       79.18
+ 
+Temperature, Node,local acceptance rate:     2.01   250.00   1       0.247
+Last Energy, Average Energy, Spec. Heat:     -141.32     -140.24       80.65
+ 

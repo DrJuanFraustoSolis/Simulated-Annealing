@@ -1,0 +1,5 @@
+cd ..
+./smmp <<!
+./EXAMPLE/1bdd.pdb
+!
+exit 
