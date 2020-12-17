@@ -1,0 +1,6 @@
+- GRSABP GRSA Big Proteins VERSION MODIFICADA PARA GRANDES PROTEINAS -
+
+status: 
+
+	ejecutando 2mlt
+	con 4 GR

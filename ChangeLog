@@ -1,0 +1,30 @@
+2006-03-22  Jan H. Meinke <j.meinke@fz-juelich.de>
+	* universe.py: Implemented function sheets().
+	* protein.py: Implemented more functions in Atom
+	* protein.py: Implemented search for strands
+2005-10-10  Jan H. Meinke <j.meinke@fz-juelich.de>
+        * redvar.f: Read global parameters from var files.  
+        * Adjusted calls to ouvar to new interface. I now pass a file name instead of a unit number.  
+        * outvar.f: Added molecule number.
+        * outvar.f: Added writing of all molecules into one variable file.
+        
+2005-10-06  Jan H. Meinke <j.meinke@fz-juelich.de>
+        * outpdb.f: Added writing of multi molecule pdb files. 
+2005-10-05  Jan Meinke  <j.meinke@fz-juelich.de>
+	* Removed some extra files.
+
+2005-09-26  Jan H. Meinke  <j.meinke@fz-juelich.de>
+	* Committed intermolecular interaction routine.
+
+2005-09-21: Jan H. Meinke <j.meinke@fz-juelich.de>
+        * enyshe.f: If nml == 0 calculate energy over all atoms. 
+
+2005-09-19: Jan H. Meinke <j.meinke@fz-juelich.de>
+        * Added eninteract.f with function eninteract to project. Calculates interaction energy between molecules.
+        * enysol.f: Added if nmol == 0 then calculate energy over all atoms.
+        * enysol.f: nresi is total number of residues not just number of residues in first molecule.
+
+2005-09-05: Jan H. Meinke <j.meinke@fz-juelich.de>
+	* Fixed calculation of number of free variables for the third and higher
+	  molecules.
+	* Fixed loop range in rgyr() to take multiple molecules into account.
