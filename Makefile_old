@@ -1,0 +1,51 @@
+# Makefile: smmp (2005 Version)
+
+#.SILENT:
+
+.SUFFIXES:	.o .f
+.f.o:
+	$(C77) $(F_FLAGS) $<
+
+# ==================================== Variables for compiling and linking
+L_FLAGS=-fopenmp -static -o main.exe
+F_FLAGS=-c -fopenmp
+C77=gfortran
+# ______________________________________________ Name of program
+#PROG=smmp
+
+# ______________________________________________ Objects (Main is 1st !)
+OBJ=main.o princg.o redseq.o  bldmol.o getmol.o redvar.o setvar.o \
+difang.o setmvs.o mklist.o redstr.o  dihedr.o enyflx.o \
+enyshe.o addend.o opeflx.o opeshe.o minim.o minqsn.o enysol.o esolan.o \
+contacts.o hbond.o helix.o anneal.o metropolis.o rgyr.o zimmer.o \
+canon.o mulcan_par.o mulcan_sim.o outvar.o outpdb.o partem_s.o \
+pdbread.o  rmsdfun.o enyreg.o opereg.o mincjg.o cnteny.o \
+opesol.o init_energy.o init_molecule.o gradient.o energy.o \
+showind.o bestind.o delta.o flowerb.o fupperb.o mutate.o \
+tourn.o newchr.o xover.o initpop.o \
+regul.o nursvr.o setting.o
+
+# ============================================== Linking
+
+$(PROG):	$(OBJ)
+	$(C77) $(OBJ) $(L_FLAGS) 
+#	$(C77) $(OBJ) $(L_FLAGS) $(OBJ)
+
+# ______________________________________________ Dependancies
+main.o princg.o redseq.o eyring.o bldmol.o getmol.o redvar.o setvar.o \
+difang.o setmvs.o mklist.o redstr.o  dihedr.o enyflx.o \
+enyshe.o addend.o opeflx.o opeshe.o minim.o minqsn.o enysol.o esolan.o \
+contacts.o hbond.o helix.o anneal.o metropolis.o rgyr.o zimmer.o \
+pdbvars.o rmsdfun.o enyreg.o opereg.o cnteny.o opesol.o \
+init_energy.o init_molecule.o gradient.o energy.o nursvr.o \
+showind.o bestind.o delta.o flowerb.o fupperb.o mutate.o \
+tourn.o newchr.o xover.o initpop.o \
+regul.o setting.o \
+canon.o mulcan_par.o mulcan_sim.o outvar.o outpdb.o partem_s.o: INCL.H 
+
+pdbread.o enyreg.o opereg.o init_molecule.o regul.o: INCP.H
+
+.PHONY : clean
+clean:
+	-rm *.o
+# end
