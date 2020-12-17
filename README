@@ -1,4 +1,4 @@
-Golden Ratio Simulated annealing (GRSA)
+Simulated annealing (SA)
 Copyright (C) 2020  Dr. Juan Paulo Sánchez Hernández, and Dr. Juan Frausto Solis
 Copyright (C) 2005 Frank Eisenmenger, U.H.E. Hansmann, Shura Hayryan, Chin-Ku Hu
 This program is free software; you can redistribute it and/or modify
@@ -17,15 +17,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 USA.
 
 README
-
-The GRSA package is This software is the Golden Ratio Simulated Annealing (GRSA).
-It is based on the SMMP package. The GRSA software is based on the Golden Ratio simulated
-annealing algorithm described in the next paper:
-
-Juan Frausto-Solis,Juan Paulo Sánchez-Hernández, Mishael Sánchez-Pérez, Ernesto Liñan García,
-Golden Ratio Simulated Annealing for Protein Folding Problem. International Journal of
-Compututational Methods , Vol 12, No. 6,1550037, 2015. Doi: https://doi.org/10.1142/S0219876215500371.
-
 The following lines are from the SMMP README file:
 
 The SMMP  package is designed for molecular simulation of linear 
